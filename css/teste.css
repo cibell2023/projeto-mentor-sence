@@ -1,0 +1,195 @@
+/* Definições iniciais do estilo global */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.test{
+    display: flex;
+    justify-content: space-between;
+     background-color: #81c9fa;
+     align-items: center;
+}
+
+.nav>a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 32px;
+
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.nav ul li a {
+    padding: 20px;
+    color: aliceblue;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.nav ul li a:hover {
+    color: #6a9fe5;
+}
+
+.nav ul li:last-child a {
+    float: right;
+    background-color: #1465bb;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+
+}
+
+.nav ul li {
+    padding: 15px;
+}
+
+#txtBusca {
+    background-color: transparent;
+    padding-left: 3px;
+    font-style: italic;
+    border: none;
+}
+
+#btnBusca {
+    width: 20px;
+    height: 20px;
+    border: 2px black;
+}
+    
+    h1 {
+    font-family: 'Courier New', Courier, monospace;
+        color: rgb(40, 111, 211);
+        text-align: center;
+    }
+
+   h2 {
+   font-family: 'Courier New', Courier, monospace;
+        color: rgb(0, 0, 0);
+
+    }
+        
+   h3 {
+    font-family: 'Courier New', Courier, monospace;
+        color: rgb(57, 118, 168);
+
+    }
+    
+    .cadastro {
+        width: 7px;
+        height: 7px; 
+        align-items: normal;
+        display: block;
+        float: right;
+        width: 15%;
+    }
+
+    .logo {
+        max-width: 100px; /* Define a largura máxima da imagem do icone. */
+      }
+
+/* Estilos para o contênier dos cartões*/
+.card-container{
+    display: grid;
+ 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Estilos para os cartões individuais*/
+
+.card{
+    background-color: #65c4e7;
+  
+    border: 1px solid #1151ff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(rgb(0, 30, 255), rgb(0, 1, 0), rgb(0, 255, 255), alpha);
+}
+/* Estilos aplicados quando a largura da tela é de no máximo 768px */
+
+@media(max-width:768px){
+    .card-container{
+        grid-template-columns: 1fr;
+       
+    }
+}
+
+button[type="submit"]{
+    background-color: #65c4e7;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5 auto;
+    display: block;
+ }
+
+h1 {
+    color:rgb(87, 183, 243);
+}
+
+#imagem2 {
+
+    align-items: baseline;
+    display:block;
+    margin: 0px auto;
+    width: 5%;
+    height: 100px;
+}
+
+#imagem3 {
+
+    display:block;
+    margin: 0px auto;
+    width: 5%;
+    max-width:100px;
+    height: 50px;
+    }
+
+    .lupa img {
+        width: 7px;
+        height: 7px; 
+        align-items: normal;
+        display: block;
+        float: right;
+        width: 15%;
+        /* Define a largura máxima da imagem do icone. */
+    }
+
+/*nav*/
+
+nav {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul {
+    flex-direction: row;
+    width: 20%;
+}
+
+/* Estilização do footer*/
+
+footer{
+    display: flex;
+   justify-content: center;
+   background: #ffffff;
+   color: #000000;
+   padding: 20px;
+  }
+  

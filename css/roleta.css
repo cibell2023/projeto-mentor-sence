@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+  }
+   /*estilização roleta*/
+
+  body{
+    font-family: "Open Sans";
+    height: 100vh;
+    overflow: hidden;
+    background: rgb(60, 60, 242);
+    background: linear-gradient(90deg, rgba(60, 60, 242, 1) 0%, rgba(98, 245, 230, 1) 52%, rgba(60, 60, 242, 1) 100%);
+    background-size: cover;
+  }
+
+  .caixaprincipal{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    
+  }
+  .caixaprincipal:after{
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: url('arrow-left.png') no-repeat;
+    background-size: 32px;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .caixa{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    overflow: hidden;
+    transition: all ease 5s;
+  }
+
+  span{
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+  }
+  .span1{
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+    background-color: #008cff;
+    top: 120px;
+    left: 0;
+  }
+  .span2{
+    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+    background-color: #4ffff3;
+    top: 120px;
+    right: 0;
+  }
+  .span3{
+    clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+    background-color: #62bbbe;
+    bottom: 0;
+    left: 120px;
+  }
+  .span4{
+    clip-path: polygon(50% 100%, 92% 0, 8% 0);
+    background-color: #23acc1;
+    top: 0;
+    left: 120px;
+  }
+
+  .caixa1 .span3 b{
+    transform: translate(-50%, -50%) rotate(-270deg);
+ }
+ .caixa1 .span1 b,
+ .caixa2 .span1 b{
+   transform: translate(-50%, -50%) rotate(185deg);
+ }
+ .caixa2 .span3 b{
+   transform: translate(-50%, -50%) rotate(90deg);
+ }
+ .caixa1 .span4 b,
+ .caixa2 .span4 b{
+   transform: translate(-50%, -50%) rotate(-85deg);
+ }
+ 
+ span b{
+   font-size: 24px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+ 
+ .caixa2{
+   width: 100%;
+   height: 100%;
+   transform: rotate(-135deg);
+ }
+
+ .girar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #001aff;
+    color: #fff;
+    box-shadow: 0 5px 20px #000;
+    font-weight: bold;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .girar:active{
+    width: 85px;
+    height: 85px;
+    font-size: 20px;
+  }
+  
+  .caixaprincipal.animate:after{
+    animation: animarFlecha 0.7s ease infinite;
+  }
+  @keyframes animarFlecha{
+    50%{
+      right: -40px;
+    }
+  }
+
+  .container{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items:center;
+  }
+
+  .seta img{
+    width: 70px;
+  }
+ /*fim*/
+
+ /*estilização lista de tarefas*/
+
+ * {
+  
+  border: #000000;
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family:'Courier New', Courier, monospace;
+ }
+ 
+ .tasks-container img {
+     width: 40px;
+     border-radius: 10px;
+     margin-bottom: 10px;
+     display: block;
+     float: right;
+     align-items: center;
+ }
+ 
+ .new-task-container button {
+     border: 1px solid #00000094;
+     font-size:"Poppins";
+     border-radius: 50px;
+     margin:2px ;
+ }
+ 
+ .new-task-container input {
+     border: 1px solid #00000094;
+     font-size:medium;
+     border-radius: 50px;
+     margin:6px;
+ }
+ 
+ h1 {
+     font-size:40px;
+     background:rgba(138, 195, 230, 0.901);
+     border-radius: 50px;
+ }
+ 
+ .new-task-container {
+     display: grid;
+     flex-direction: column;
+     grid-template-areas: "container, container1";
+     gap: 20px;
+     padding: 20px;
+ }
+
+ .principal{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10%;
+ }
+
+/*estilos para auto contraste}*/
+.high-contrast {
+  text-align: center;
+  background-color: #2e2c2c;
+  border-radius: 15px;
+  padding: 5%;
+  max-width: 400px;
+  color: white;
+}
+
+.high-contrast button{
+  text-align: start;
+  cursor: pointer;
+  color: black;
+  background-color: #81c9fa;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+button{
+  text-align: center;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  left: 20px;
+  background: transparent;
+}
