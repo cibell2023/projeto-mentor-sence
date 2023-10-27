@@ -1,0 +1,63 @@
+.container-grid {
+    display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: repeat(7,150px);
+	grid-auto-rows: 50px;
+    gap: 0px; /*espaço entre uma div e outra*/
+    grid-template-areas: 
+    "nav nav nav" 
+   ". dastro ."
+   ". dastro ."
+   ". dastro ."
+   ". dastro ."
+   "re re re"
+
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+    font-size: 1.25em;
+    font-weight: normal;
+    background: white ;
+    color: black;
+
+}
+
+body{
+    font-family: monospace;
+    color: #ffffff;
+    font-size: 1.25em;
+    box-sizing: border-box;
+    background: #74beef;
+}
+
+.nav {
+    margin: 7px;
+    background:  #5fb5ef;
+    text-align: center;
+    font-size: 1.5em;
+   grid-area: nav;
+}
+
+.dastro {
+    margin: 7px;
+    background: rgba(0, 217, 255);
+    text-align: center;
+    font-size: 1.5em;
+   grid-area: dastro;
+}
+
+
+
+
+
+.re {
+    margin: 7px;
+    background:  #74beef;
+    text-align: center;
+    font-size: 1.5em;
+   grid-area: re;
+}
+
+

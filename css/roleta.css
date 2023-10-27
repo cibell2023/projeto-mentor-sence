@@ -13,6 +13,8 @@
     background: rgb(60, 60, 242);
     background: linear-gradient(90deg, rgba(60, 60, 242, 1) 0%, rgba(98, 245, 230, 1) 52%, rgba(60, 60, 242, 1) 100%);
     background-size: cover;
+    background-image: url("../img/Novo_Projeto.png");
+    background-repeat: no-repeat;
   }
 
   .caixaprincipal{
@@ -51,25 +53,25 @@
   }
   .span1{
     clip-path: polygon(0 92%, 100% 50%, 0 8%);
-    background-color: #008cff;
+    background-color: rgb(149, 255, 149);
     top: 120px;
     left: 0;
   }
   .span2{
     clip-path: polygon(100% 92%, 0 50%, 100% 8%);
-    background-color: #4ffff3;
+    background-color: rgb(206, 107, 206);
     top: 120px;
     right: 0;
   }
   .span3{
     clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
-    background-color: #62bbbe;
+    background-color: rgb(250, 255, 117);
     bottom: 0;
     left: 120px;
   }
   .span4{
     clip-path: polygon(50% 100%, 92% 0, 8% 0);
-    background-color: #23acc1;
+    background-color: rgb(63, 138, 204);
     top: 0;
     left: 120px;
   }
@@ -150,56 +152,128 @@
  /*estilização lista de tarefas*/
 
  * {
-  
-  border: #000000;
-  text-align: center;
-  align-items: center;
   box-sizing: border-box;
-  font-family:'Courier New', Courier, monospace;
- }
- 
- .tasks-container img {
-     width: 40px;
-     border-radius: 10px;
-     margin-bottom: 10px;
-     display: block;
-     float: right;
-     align-items: center;
- }
- 
- .new-task-container button {
-     border: 1px solid #00000094;
-     font-size:"Poppins";
-     border-radius: 50px;
-     margin:2px ;
- }
- 
- .new-task-container input {
-     border: 1px solid #00000094;
-     font-size:medium;
-     border-radius: 50px;
-     margin:6px;
- }
- 
- h1 {
-     font-size:40px;
-     background:rgba(138, 195, 230, 0.901);
-     border-radius: 50px;
- }
- 
- .new-task-container {
-     display: grid;
-     flex-direction: column;
-     grid-template-areas: "container, container1";
-     gap: 20px;
-     padding: 20px;
- }
+}
 
- .principal{
+body {
+  margin: 0;
+  padding: 0;
+  background: #eeeeee;
+}
+
+h1 {
+  text-align:right;
+  font-size: 3rem;
+}
+
+header {
   display: flex;
-  justify-content: space-around;
-  margin-top: 10%;
- }
+  flex-flow: row wrap;
+  align-items: center;
+  width: 40%;
+  margin: auto auto;
+}
+
+input {
+  height: 60px;
+  font-size: 2rem;
+  width: 80%;
+  padding-left: 10%;
+}
+
+button.add {
+  width: 20%;
+  cursor: pointer;
+  background: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  height: 60px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: auto auto;
+  padding-top: 40px;
+}
+
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 0 20px #ccc;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.item.clicado {
+  background: #d4f6d9;
+}
+
+.item.clicado .item-nome {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.item-icone {
+  flex: 20%; 
+  text-align: center;
+  font-size: 2rem;
+}
+
+.item-nome {
+  flex: 55%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-botao {
+  flex: 25%;
+  border:1px solid rgb(0, 0, 0); 
+}
+
+.delete {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 80px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.mdi-check-circle {
+  color: green;
+}
+
+footer {
+  display: flex;
+  flex-flow: row-wrap;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background: black;
+  height: 40px;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+}
+
+footer i {
+  color: red;
+  font-size: 22px;
+}
 
 /*estilos para auto contraste}*/
 .high-contrast {

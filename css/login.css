@@ -1,0 +1,133 @@
+html,body {
+    height: 100%;
+      margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #81c9fa;
+    background-image: url("../img/4.webp");
+    background-repeat: no-repeat; 
+}
+
+
+.container {
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    padding: 5%;
+    max-width: 400px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10%;
+}
+
+
+/*como tem 2 input a forma mais facil de fazer sem repertir é essa*/
+form input[type="text"],
+form input[type="password"] {
+    padding: 9px;
+    border-radius: 9px;
+    border: 1px solid black;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* cursor: pointer; serve pra colocar a mãozinha como mouse*/
+button[type="button"] {
+    background-color: #81c9fa;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+button[type="button"]:hover {
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.mundo {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.mundo a {
+    text-decoration: none;
+    color: rgb(169, 29, 29);
+
+}
+
+.mundo a:hover {
+    color: #000000;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+
+/*estilos para auto contraste}*/
+.high-contrast {
+    text-align: center;
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 5%;
+    max-width: 400px;
+    color: white;
+}
+
+.high-contrast button{
+    text-align: start;
+    cursor: pointer;
+    color: black;
+    background-color: #81c9fa;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+}
+
+
+#btnTop {
+    display: flex; /* Inicialmente, o botão estará oculto */
+    position: fixed;
+    flex-direction: column;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #366f95;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#btnTop:hover {
+    background-color: #67c7ff;
+  }
+
+  #btnTop img {
+    width: 1.5vw;
+    height: 1.5vw;
+  }

@@ -3,6 +3,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url("../img/Novo_Projeto.png");
+    background-repeat: no-repeat;
 }
 .test{
     display: flex;
@@ -100,6 +102,10 @@ body {
 
     .logo {
         max-width: 100px; /* Define a largura máxima da imagem do icone. */
+        display: flex;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
       }
 
 /* Estilos para o contênier dos cartões*/
@@ -114,9 +120,9 @@ body {
 /* Estilos para os cartões individuais*/
 
 .card{
-    background-color: #65c4e7;
+    background-color: aliceblue;
   
-    border: 1px solid #1151ff;
+    border: 1px solid #444c64;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(rgb(0, 30, 255), rgb(0, 1, 0), rgb(0, 255, 255), alpha);
 }
@@ -140,7 +146,7 @@ button[type="submit"]{
  }
 
 h1 {
-    color:rgb(87, 183, 243);
+    color:rgb(0, 0, 0);
 }
 
 #imagem2 {
