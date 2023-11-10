@@ -91,18 +91,8 @@ button[type="button"]:hover {
     color: white;
 }
 
-.high-contrast button{
-    text-align: start;
-    cursor: pointer;
-    color: black;
-    background-color: #81c9fa;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
-    justify-content: center;
+.high-contrast .mundo a:hover{
+    color: white;
 }
 
 

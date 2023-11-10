@@ -6,6 +6,7 @@ body {
     background-image: url("../img/Novo_Projeto.png");
     background-repeat: no-repeat;
 }
+
 .test{
     display: flex;
     justify-content: space-between;
@@ -13,74 +14,19 @@ body {
      align-items: center;
 }
 
-.nav>a {
-    text-decoration: none;
-    color: black;
-    font-weight: 800;
-    font-size: 32px;
-
-}
-
-.nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.nav ul li {
-    display: inline;
-    padding: 20px;
-}
-
-.nav ul li a {
-    padding: 20px;
-    color: aliceblue;
-    display: inline-block;
-    text-decoration: none;
-    transition: all .4s;
-}
-
-.nav ul li a:hover {
-    color: #6a9fe5;
-}
-
-.nav ul li:last-child a {
-    float: right;
-    background-color: #1465bb;
-}
-
-.nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    align-items: center;
-
-}
-
-.nav ul li {
-    padding: 15px;
-}
-
-#txtBusca {
-    background-color: transparent;
-    padding-left: 3px;
-    font-style: italic;
-    border: none;
-}
-
-#btnBusca {
-    width: 20px;
-    height: 20px;
-    border: 2px black;
+.test img{
+    margin: 20px;
 }
     
     h1 {
-    font-family: 'Courier New', Courier, monospace;
-        color: rgb(40, 111, 211);
-        text-align: center;
+    font-family: 'Manrope','serif';
+    font-size: 3rem;
+    color: rgb(40, 111, 211);
+    text-align: center;
     }
 
    h2 {
-   font-family: 'Courier New', Courier, monospace;
+    font-family: 'Manrope','serif';
         color: rgb(0, 0, 0);
 
     }
@@ -108,7 +54,7 @@ body {
         justify-content: center;
       }
 
-/* Estilos para o contênier dos cartões*/
+/* Estilos para o container dos cartões*/
 .card-container{
     display: grid;
  
@@ -120,8 +66,8 @@ body {
 /* Estilos para os cartões individuais*/
 
 .card{
+    margin: 0 auto;
     background-color: aliceblue;
-  
     border: 1px solid #444c64;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(rgb(0, 30, 255), rgb(0, 1, 0), rgb(0, 255, 255), alpha);
@@ -135,6 +81,15 @@ body {
     }
 }
 
+button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+button a:hover{
+    color: white;
+}
+
 button[type="submit"]{
     background-color: #65c4e7;
     border: none;
@@ -143,6 +98,8 @@ button[type="submit"]{
     cursor: pointer;
     margin: 5 auto;
     display: block;
+    
+
  }
 
 h1 {
@@ -189,13 +146,52 @@ nav ul {
     width: 20%;
 }
 
-/* Estilização do footer*/
+.depoimentos{
+    margin: 5rem;
+}
+
+/*estilos para auto contraste}*/
+.high-contrast {
+    background-color: #1a1a1a;
+    background-image: url("../img/");
+}
+
+.high-contrast .depoimentos {
+    color: white;
+}
+/*fim da página*/
 
 footer{
     display: flex;
-   justify-content: center;
-   background: #ffffff;
-   color: #000000;
-   padding: 20px;
+    justify-content: space-around;
+    background: rgb(111, 181, 238);
+    color: #000000;
+    padding: 50px;
+ }
+ 
+/* Estilização do icones */
+.cabecalho {
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    margin: 1px;
+    color: #fff;
   }
   
+  .cabecalho#log{
+    align-items: center;
+  }
+
+  /* Estilização das opções no icones*/
+  .redes-sociais img {
+    width: 20px;
+    height: auto;
+    padding: 10px;
+    margin-left: 15px;
+
+  }
+
+  /*fim do footer*/
+
+
+  #mais{display: none}

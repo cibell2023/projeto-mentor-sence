@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="img/logo.avif" />
-  <link rel="stylesheet" href="css/home.css">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/responsivo.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/menu.css">
   <link rel="icon" type="image/x-icon" href="img/logo.png">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -16,25 +19,24 @@
 
 <body>
   <!--fica em baixo do body, substituindo o antigo menu-->
-  <div class="test">
+  <div class="menu">
     <div id="logo">
-      <img src="img/mentor sence.png" width="180px" height="90px">
-    </div>
-    <nav class="nav">
-      <ul>
-        <li><a href="galeria">Galeria</a></li>
-        <li><a href="depoimento">Depoimentos</a></li>
-        <li><a href="contatos">Contatos</a></li>
-        <li><a href="chat">Chat</a></li>
-        <div id="divBusca">
-          <input type="text" id="txtBusca" placeholder="Pesquisar..." />
-          <img src="img/lupa.png" id="btnBusca" alt="Buscar" />
-        </div>
-        <li><a href="login.html" id="log">Login</a></li>
-        <!--parte do menu -->
-      </ul>
-    </nav>
+      <img src="img/mentor sence.png" width="160px" height="90px">
   </div>
+  <nav class="nav">
+      <ul>
+
+        <li><a href="home.html">Home</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="teste.html">Depoimentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a class="ativado" href="index-cibelly mariana.html">Chat</a></li>
+        <li><a href="roleta.html">Desafio</a></li>  
+        <li><a href="login.html" id="log">Login</a></li>
+
+      </ul>
+</nav>        <!--fim do menu -->
+</div>
 
   <!--"menu lateral"-->
   <div class="container">
@@ -42,7 +44,7 @@
     <div class="side-bar">
 
       <div class="side-bar-brand">
-        <div class="brand-name">Menu lateral</div>
+       
         <div class="button">
           <div></div>
           <div></div>
@@ -52,14 +54,11 @@
 
       <div class="list-item">
         <ul>
-          <li><a href=""><img src="img/do-utilizador.png">Informaçoes do Profissional</p></a></li>
+          <li><a href=""><img src="img/do-utilizador.png"><p class="text">informaçoes do Profissional</p></a></li>
           <li><a href="">
-              <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
+              <p class="text">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo
                 utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
-                embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como
-                também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na
-                década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente
-                quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+                embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, </p>
             </a></li>
 
         </ul>
@@ -74,31 +73,44 @@
 
     </div>
 
-    <div class="menu-btn">
-
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-
-  </div>
 
   <!--chat-->
-  
-        <!-- Aqui aparecerão as mensagens -->
+  <div class="chat-container">
+    <div class="chat">
+        <div class="message">
+            <div class="user">Borboleta</div>
+            <div class="text">Olá, como posso ajudar?</div>
+            <div class="time"></div>
+        </div>
+        <!-- Mais mensagens viriam aqui -->
     </div>
-    <div class="input-container">
-        <input type="text" id="message-input" placeholder="Digite sua mensagem">
-        <button onclick="sendMessage()">Enviar</button>
+    <div class="send">
+        <input type="text" id="messageInput" placeholder="Digite sua mensagem">
+        <button id="sendMessage">Enviar</button>
     </div>
-</div>
+  </div>
 
+      
+ 
+<!--Botão do auto contraste-->
+
+<button onclick="autocontrastehome()" id="btnTop" title="Voltar ao Topo"><span class="material-symbols-outlined">
+</span><img src="img/logo.png" width="50px" height="50px"><p>Auto Contraste</p></button>
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 
   <!--footer-->
-  </article>
-  <script src="script.js"></script>
-
 </body>
 <script src="js/main.js"></script>
+<script src="js/chat.js"></script>
 
 </html>

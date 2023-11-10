@@ -1,0 +1,386 @@
+/* Estilização das textos, fontes e imagem de fundo*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    background-repeat: no-repeat;
+  
+  }
+
+  .fundo{
+    background-image: url("../img/fundo-de-tudo.png");/*Imagem de fundo da pagina*/
+    background-repeat: repeat;
+
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 20px;
+    padding: 50px;
+  }
+  h1 {
+    font-family: 'Manrope','serif';/*fontes dos textos de h1*/
+    font-size: 3rem; /*tamanho das fontes dos textos de h1*/
+    text-align: center;/*centralizando as fontes dos textos de h1*/
+  }
+  
+  h3 {
+    font-family: 'Manrope','serif';/*fontes dos textos de h3*/
+    font-size: 3rem;/*tamanho das fontes dos textos de h3*/
+    text-align: center;/*centralizando as fontes dos textos de h3*/
+  }
+  
+  p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 130%;/*tamanho das fontes dos textos de paragrafos */
+    text-align: center; /*centralizando as fontes dos paragrafos*/
+    justify-content: center;
+    margin: 10px;/*margem fontes dos textos dos paragrafos */
+    
+  }
+  
+  br {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 130%;/*tamanho das fontes dos textos de paragrafos */
+    text-align: center; /*centralizando as fontes dos paragrafos*/
+    margin: 30px;/*margem fontes dos textos dos paragrafos */
+  }
+  .test{
+    display: flex;
+    justify-content: space-between;
+     background-color: #81c9fa;/*cor do menu*/
+     align-items: center;
+  }
+
+  .test img {
+    margin: 20px;
+  }
+  
+  .nav>a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 32px;
+  
+  }
+  
+  .nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav ul li {
+    display: inline;
+    padding: 20px;
+  }
+  
+  .nav ul li a {
+    padding: 20px;
+    color: aliceblue;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .4s;
+  }
+  
+  
+  .nav ul li a:hover {
+    color: #000000;
+  }
+  
+  .nav ul li:last-child a {
+    float: right;
+    background-color: #1465bb;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    align-items: center;
+  
+  }
+  
+  .nav ul li {
+    padding: 15px;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(38, 100, 163);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 90px;
+    max-width: 100%;
+  
+  }
+  
+  #config{
+    width: 20px;
+    height: auto;
+  }
+
+  /* Estilização do icones */
+.cabecalho {
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    padding: 10px 20px 5px;
+  }
+
+  /*Estilização dos icones (contato)*/
+
+.icones {
+    display: flex;/*icones do footer em flex*/
+    justify-content: center;/*centralizar dos icones do footer*/
+    align-items: center;/*centralizar dos icones do footer*/
+  }
+  #contato {
+    text-align: center;/*centralizar dos icones do footer*/ 
+  }
+  
+  .contato {
+    display: flex;
+    justify-content: center;/*centralizar dos icones do footer*/
+    align-items:  center;/*centralizar dos icones do footer*/
+    margin: 9px;/*margem dos icones do footer em 9px*/
+  }
+
+  button{
+    text-align: center;/*botão do auto contraste no centro*/
+    border: none;
+    color: black;/*botão do auto contraste em preto o texto*/
+
+    background: transparent;/*botão do auto contraste em transparente*/
+  }
+
+  /* Estilização das opções no icones*/
+.opcoes img {
+    width: 20px;/*largura dos icones em 20px*/
+    height: auto;
+    margin-left: 5px;/*altura dos icones em 5px*/
+  }
+  
+  .gallery-container p {
+    font-family: 'Courier New', Courier;/*texto do footer com paragrafo*/
+    color: black;/*texto do footer com preto*/
+    text-align: center;
+    height: auto;
+    width: auto;
+  }
+/* Estilização dos mapas*/
+#mapa {
+  gap: 100px;
+  padding: 10px 20px 5px;
+  margin: 40px; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+  /* Estilização do footer*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(111, 181, 238);/*cor do footer*/
+    color: #000000;
+    padding: 50px;/*tamanho do footer*/
+  }
+  
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.cabecalho img {
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilização da logo do footer*/
+.cabecalho {
+    align-items: center;/*centralizar a logo do footer*/
+    margin: 10px;
+    justify-content: center;/*centralizar a logo do footer*/
+  }
+  
+.logo img{
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  
+  }
+
+   /*Estilização do cadastro de usuario*/
+
+   form {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+
+   }
+
+  .form-input {
+    --width-of-input: 80%;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+   }
+   /* styling of Input */
+   .input {
+    color: black;
+    font-size: 20px;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+   }
+   /* styling of animated border */
+   .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+   }
+   /* Hover on Input */
+   input:hover {
+    background: var(--input-hovered-color);
+   }
+   
+   input:focus {
+    outline: none;
+   }
+   /* here is code of animated border */
+   input:focus ~ .input-border {
+    width: 100%;
+   }
+   /* === if you want to do animated border on typing === */
+   /* remove input:focus code and uncomment below code */
+   /* input:valid ~ .input-border{
+     width: 100%;
+   } */
+/*Implementando a estilização do auto contraste*/
+
+.box {
+  margin-top: 2%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box select {
+  background-color: #9cb6ea;
+  color: black;
+  padding: 12px;
+  width: 80%;
+  border: none;
+  font-size: 20px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+}
+
+.box::before {
+  content: "\f13a";
+  width: 0%;
+  height: 100%;
+  text-align: center;
+  font-size: 28px;
+  line-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+
+.box:hover::before {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+  padding: 30px;
+}
+
+button {
+  margin-top: 20%;
+  background-color: #f3f7fe;
+  color: black;
+  border: solid 1px #5891ff;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: .3s;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #5891ff;
+  box-shadow: 0 0 0 5px #3b83f65f;
+  color: #fff;
+}
+
+.high-contrast {
+  background-color: #1a1a1a;
+  background-image: url("../img/");
+  color: white;
+}
+
+.high-contrast .fundo{
+  background-image: url("../img/");
+}
+
+
+
+/* Estilize o botão "Voltar ao Topo" */
+#btnTop {
+  display: flex; /* Inicialmente, o botão estará oculto */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #366f95;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#btnTop:hover {
+  background-color: #67c7ff;
+}
+
+#btnTop img {
+  width: 1.5vw;
+  height: 1.5vw;
+}

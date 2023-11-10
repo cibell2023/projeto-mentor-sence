@@ -7,7 +7,7 @@
    /*estilização roleta*/
 
   body{
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;;
     height: 100vh;
     overflow: hidden;
     background: rgb(60, 60, 242);
@@ -15,6 +15,7 @@
     background-size: cover;
     background-image: url("../img/Novo_Projeto.png");
     background-repeat: no-repeat;
+    background-color: #001aff;
   }
 
   .caixaprincipal{
@@ -33,6 +34,7 @@
     right: -30px;
     top: 50%;
     transform: translateY(-50%);
+   
   }
   .caixa{
     width: 100%;
@@ -129,6 +131,7 @@
   
   .caixaprincipal.animate:after{
     animation: animarFlecha 0.7s ease infinite;
+ 
   }
   @keyframes animarFlecha{
     50%{
@@ -142,6 +145,7 @@
     flex-direction: column;
     justify-content: center; 
     align-items:center;
+    background-color: #72bfff; /*cor de fundo da roleta */
   }
 
   .seta img{
@@ -158,7 +162,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #eeeeee;
+  background: #4b90ea; /*cor de fundo da lista de tarefas */
 }
 
 h1 {
